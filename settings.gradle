@@ -1,0 +1,2 @@
+rootProject.name='AndroidAutoBackup'
+include ':app'
