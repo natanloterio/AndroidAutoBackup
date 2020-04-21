@@ -4,9 +4,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_app"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_app"
+        android:backupAgent=".MyBackupAgent"
+        android:restoreAnyVersion="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -19,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIZZacqfag7n8EXjdvW3A8pEwSb1hly-9w-8V__A"/>
     </application>
 
 </manifest>

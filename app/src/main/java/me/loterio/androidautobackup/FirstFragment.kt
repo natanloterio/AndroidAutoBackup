@@ -37,7 +37,6 @@ class FirstFragment : Fragment() {
         etComments.doAfterTextChanged { text -> text?.let { saveToPref(it,getString(R.string.preference_comments)) } }
     }
 
-
     override fun onResume() {
         super.onResume()
         loadData()
